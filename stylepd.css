@@ -1,0 +1,178 @@
+.ul5 li{
+    list-style: circle; 
+    font-size: smaller;
+    line-height: 90%;
+}
+
+.pd{
+    margin-top: 80px;
+}
+.row1{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.pd .col2 img{
+    padding: 0;
+}
+
+.pd col2{
+    padding: 20px;
+}
+
+.pd h3{
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pd select{
+    display: block;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.pd input{
+    width: 15%;
+    height: 20px;
+    padding-left: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+    border: 0.8px solid #ff523b;
+}
+
+input:focus{
+    outline: none;
+}
+.pd ul li{
+    list-style: circle;
+}
+.btn2{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding:  4px;
+    margin: 15px 0;
+    border-radius: 15px;
+    transition: background 0.5s;
+    font-size: 13px;
+}
+
+.btn2:hover{
+    background: #563434;
+}
+
+.pd h1{
+    font-size: 35px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+.pd h4{
+    font-size: 20px;
+    font-weight: blod;
+    color: black;
+}
+.pd p{
+    font-size: 16px;
+    font-weight: lighter;
+    color: black;
+    line-height: 18px;
+    text-align: justify;
+}
+
+.smallimgrow{
+    display: flex;
+    justify-content: space-between;
+}
+.smallimgcol{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    background: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+    }
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footercol1,.footercol2,.footercol3,.footercol4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footercol2{
+    flex: 1;
+    text-align: center;
+}
+.footercol2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footercol3,.footercol4{
+    flex-basis: 12%;
+    text-align: center;
+}
+.footer ul li{
+    list-style-type: none;
+}
+
+.applogo{
+    margin-top: 20px;
+}
+.applogo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px;
+}
+.copyright{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+      }  
+      nav ul li{
+          display: block;
+          margin-right: 50px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+      nav ul li a{
+          color: #fff;
+      }
+      .menuicon{
+          display: block;
+          cursor: pointer;
+      }
+  
+  }
+  
+@media screen and (max-width: 600px){
+      .row{
+          text-align: center;
+      }
+      .col2,.col3,.col4{
+          flex-basis: 100%;
+        }
+}

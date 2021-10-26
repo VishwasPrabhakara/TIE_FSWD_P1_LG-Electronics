@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="loginpage.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylec.css">
+  <link rel="stylesheet" href="stylep.css">
+  <link rel="stylesheet" href="stylel.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width="100px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="loginpage.html">Account</a></li>
+                </ul>    
+            </nav>
+            <img src="cart.png" width="30px" height="30px">
+            <img src="menu.png" class="menuicon" 
+            onclick="menutoggle()">
+        </div>
+    </div>
+    
+  
+<!--Login Page--> 
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>Sign In</h2>
+      <form onsubmit="alert"('Signed In successfully')">
+      <label>
+        <span>Email Address</span>
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" name="password" maxlength="10" minlength="6" required pattern="[A-Za-z0-9@]{1,10}" title="Password should be 6-10 characters and can include uppercase letters,lowercase letters,numbers and @ only ">
+      </label>
+      <button class="submit" type="submit">Sign In</button>
+      <p class="forgot-pass">Forgot Password ?</p>
+
+      <div class="social-media">
+        <ul>
+          <li><a href="https://www.facebook.com/login"><img src="facebook.png"></a></li>
+          <li><a href="https://twitter.com/login?lang=en"><img src="twitter.png"></a></li>
+          <li><a href="https://www.linkedin.com/login"><img src="linkedin.png"></a></li>
+          <li><a href="https://www.instagram.com/"><img src="instagram.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </form>
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2 style="color: rgb(20, 5, 85);font-weight: bolder; ">New here?</h2>
+          <p style="color: rgb(115, 255, 0); font-weight: bolder;">Sign up and discover great amount of new opportunities!</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>One of us?</h2>
+          <p style="color: black; font-weight: bolder;">If you already have an account, just sign in. We've missed you!</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Sign Up</span>
+          <span class="m-in">Sign In</span>
+        </div>
+      </div>
+      <div class="form sign-up">
+      <form onsubmit="alert('Registered Successfully')">
+          <h2>Sign Up</h2>
+        <label>
+          <span>User Name</span>
+          <input type="text"  name="fname" required pattern="[A-Za-z]{1,}">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" required>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" maxlength="10" minlength="6" required pattern="[A-Za-z0-9@]{1,10}" title="Password should be 6-10 characters and can include uppercase letters,lowercase letters,numbers and @ only ">
+        </label>
+        <label>
+          
+        <button type="submit" class="submit">Sign Up Now</button>
+      </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row row1">
+                <div class="footercol1">
+                   <h3>Download Our App</h3>
+                   <p>Download App For Android and Ios mobile phone.</p> 
+                    <div class="applogo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footercol2">
+                    <img src="logo.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure And
+                        Benefits of Electronics Accessible to everyone.</p> 
+                
+                </div>
+                <div class="footercol3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Afflliate</li>
+                    </ul>
+                
+                </div>
+                <div class="footercol4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - LG Electronics</p>
+        </div>
+    </div>
+    </footer>
+   
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
